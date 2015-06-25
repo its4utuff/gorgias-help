@@ -1,99 +1,108 @@
 .. _templates:
 
-Templates
-=========
+Creating Templates
+==================
 
-`Templates` are the primary block of the Gorgias Google Chrome extension.
+What's a template?
+------------------
 
-One distinction compared to the :ref:`alternatives` is that it supports custom variables
-that are replaced on template execution.
+A template is a piece of text that can be inserted with Gorgias, to avoid writing it manually.  
 
-The simplest example can be summarized as follows:
+I can be any repetitive text you frequently write. 
 
-When you write an e-mail to someone it's usually a good idea to address that
-person by name, this removes ambiguity if the e-mail has multiple recipients
-and is also a good sign that you took the time to address somebody with a
-greeting. It's good etiquette!
+Here are a few examples:
+::
+    Malala Yousafzai
+    Nobel Peace Prize 2014
+    malala@yousafzai.org
+    (415)-937-2402 
 
-So imagine that you want to address Jane Doe by typing::
+
+::
+
+    Hello Jane,
+
+    Thanks for contacting us. Here are the steps to reset your password:
+    ...
+    Best, 
+
+    John
+
+
+How to create a template?
+-------------------------
+
+First, go to the New Template page
+
+    1. Click on the "G" icon to open the Gorgias menu
+.. figure:: img/gorgias-icon.png
+    :width: 200
+    :alt: Gorgias menu
+    :align: center
+.
+    2. Click on "New Template". You're in! Now let's create your template
+
+    3. Give a name to your template, choose a shortcut (that's the shortcut you will type to insert it), and a body
+.. figure:: img/template-editor.png
+    :width: 500
+    :alt: Template editor
+    :align: center
+.
+    4. Save it and you're done! 
+
+You can now try inserting it in your favorite inbox. 
+
+
+You can also create templates out of text in Chrome
+    1. Select the text you want to create a template out of, right click on it, and hit "Save [selected text]...".
+    2. You can now configure it and save it as explained above!
+.. figure:: img/save.png
+    :width: 500
+    :alt: Template editor
+    :align: center
+.
+
+
+Variables
+---------
+
+If you address someone in a template, you can use a variable to avoid changing the recipient's name everytime you insert this template. 
+
+Imagine you start a template by addressing the recipient::
+
+    Hello XXX,
+
+    And then the rest of the e-mail follows...
+
+You can use a variable for the recipient first name. Place the selector where you want to insert it, click on "Insert Variables" and select "To: First Name". 
+
+Now your template looks like this::
+
+    Hello {{to.0.first_name}},
+
+    And then the rest of the e-mail follows...
+
+and if you write to Jane, this is what it will print when you insert it::
 
     Hello Jane,
 
     And then the rest of the e-mail follows...
 
-
-Now make it easier to write the 'Hello Jane' part you can simply create a
-template and use the template variables.
-The following goes into the body of the quicktext::
-
-    Hello {{to.0.first_name}},
-
-When using the `template` above it will generate the following result::
-
-    Hello Jane,
+TADA!
 
 
-Now, let's break down the template above:
+List of variables
++++++++++++++++++
 
- 1. '{{' marks the start of the template variable.
- 2. 'to' - refers to the "To" field in the e-mail. So if you have say:
-     Jane Doe <jane@doe.org> in the 'to' variable correspond with Jane's address.
- 3. '.0' means that we only refer to the first address. So if we have multiple
-     addresses in the 'To' field then we refer only to the first one and not the
-     rest of them.
- 4. '.first_name' referst to the first to address insert only the
-     'first_name' in the template. We could have said 'name' - would've include the full name.
- 2.  '}}' marks end of template variable.
+Here is the list of variables you can use:
 
-So once again, if we have 'Jane Doe <jane@doe.org>' in the `To` field then the
-resulting template will look like this::
-
-    Hello Jane,
-
-
-Other examples
-----------------
-
-::
-
-    'Hello {{ to[0].name }}' => 'Hello Jane Doe'
-    'The subject: {{ subject }}' => 'The subject: e-mails subject'
-    'You can e-mail me at: {{ from.email }}' => 'You can e-mail me at: email@example.org'
-
-
-You can also do more complicated stuff like for loop iteration::
-
-    Hello {{#each to}}
-        - Name {{name}}
-        - First name {{first_name}}
-        - Last name {{last_name}}
-        - Email {{email}}
-    {{/each}}
-
-
-Which given multiple addresses in the `To` field will result in this rendering::
-
-
-    Hello
-        - Name Jane Doe
-        - First name Jane
-        - Last name Doe,
-        - Email jane@doe.org
-
-.. note:: If the variable value is missing (Ex: no First Name for the contact) the variable is replace with an empty string.
-
-Complete list of available variables
-------------------------------------
-
-As you know by now the `To` and `From` fields are a list and `0` is the index of the first item in that list.
-
-* `To` field
+* `To` field (recipient)
     * {{to.0.email}}
     * {{to.0.name}}
     * {{to.0.last_name}}
     * {{to.0.first_name}}
 
-* `From` field
+* `From` field (you!)
     * {{from.0.email}}
     * {{from.0.name}}
     * {{from.0.last_name}}
@@ -104,6 +113,7 @@ As you know by now the `To` and `From` fields are a list and `0` is the index of
     * {{cc.0.name}}
     * {{cc.0.last_name}}
     * {{cc.0.first_name}}
+
 * `BCC` field
     * {{bcc.0.email}}
     * {{bcc.0.name}}
@@ -112,11 +122,33 @@ As you know by now the `To` and `From` fields are a list and `0` is the index of
 
 * {{subject}} - subject content of the message
 
-
-What is behind all this?
-------------------------
-
 The power of the templates is given by the `Handlebars <http://handlebarsjs.com/>`_
 template library.
 
+.. note:: If the variable value is missing (e.g. no First Name for the contact) the variable is replace with an empty string.
 
+
+Formatting
+----------
+
+To add formatting to a template, you can use HTML. 
+
+If you don't know HTML, no worries! We have a trick for you: 
+
+* Format your template in Gmail (with links, or anything else you need)
+* Copy it `here <https://dl.dropboxusercontent.com/u/67896528/Editor/editor.html>`_, convert it into HTML & copy the HTML code
+* Copy the HTML code in your template body, you're good!
+
+
+Adding email subject in a template
+----------------------------------
+
+If you're using Gorgias to send emails, you can also add an email subject in a template. 
+
+In the "New template" window, click on "Configure Fields" to show the subject field, and type in the subject here.
+
+
+Tagging
+-------
+
+You can tag templates to keep your templates organized. You can find more in :ref:`tags`. 
