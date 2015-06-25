@@ -8,7 +8,7 @@ What's a template?
 
 A template is a piece of text that can be inserted with Gorgias, to avoid writing it manually.  
 
-I can be any repetitive text you frequently write. 
+It can be any repetitive text you frequently write. 
 
 Here are a few examples:
 ::
