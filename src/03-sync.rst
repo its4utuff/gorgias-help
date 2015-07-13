@@ -44,7 +44,7 @@ While `Google Sync <http://www.google.com/sync/index.html>`_ is very convenient 
 
 Here are the reasons why Chrome Sync is not the best fit for Gorgias:
 
-First, `chrome.storage.sync <https://developer.chrome.com/extensions/storage>`_ is `limited <https://developer.chrome.com/extensions/storage#property-sync>` to 100MB and 512 items. While this is more than enough for most Gorgias users, some of our users have more than 512 templates. Hard to believe, but true.
+First, `chrome.storage.sync <https://developer.chrome.com/extensions/storage>`_ is `limited <https://developer.chrome.com/extensions/storage#property-sync>`_ to 100MB and 512 items. While this is more than enough for most Gorgias users, some of our users have more than 512 templates. Hard to believe, but true.
 
 Secondly (and probably most importantly for our paying customers) the chrome.storage.sync is attached only to one account, you can't share your templates with other team members.
 
