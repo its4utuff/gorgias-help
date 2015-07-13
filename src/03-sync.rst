@@ -37,7 +37,7 @@ by your team.
 
 .. _installed: https://chrome.google.com/webstore/detail/quicktext-for-gmail/fbkpbekdjdelappaffjlbfffidknkeko
 
-Why not use google.sync instead?
+Why not use Google Sync instead?
 --------------------------------
 
 While `Google Sync <http://www.google.com/sync/index.html>`_ is very convenient and works well for most Chrome extensions, it's a bit more complicated for `Gorgias`.
