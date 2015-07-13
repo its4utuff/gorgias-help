@@ -36,3 +36,18 @@ by your team.
           In order to completely delete your data please send an e-mail to support@gorgias.io
 
 .. _installed: https://chrome.google.com/webstore/detail/quicktext-for-gmail/fbkpbekdjdelappaffjlbfffidknkeko
+
+Why not use google.sync instead?
+--------------------------------
+
+While `Google Sync <http://www.google.com/sync/index.html>`_ is very convenient and works well for most Chrome extensions, it's a bit more complicated for `Gorgias`.
+
+Here are the reasons why Chrome Sync is not the best fit for Gorgias:
+
+First, `chrome.storage.sync <https://developer.chrome.com/extensions/storage>`_ is `limited <https://developer.chrome.com/extensions/storage#property-sync>` to 100MB and 512 items. While this is more than enough for most Gorgias users, some of our users have more than 512 templates. Hard to believe, but true.
+
+Secondly (and probably most importantly for our paying customers) the chrome.storage.sync is attached only to one account, you can't share your templates with other team members.
+
+Other practical reasons include the fact that it's difficult to debug a Sync problem when it's completely outside your control (Google Servers) and it's especially difficult to maintain 2 different implementations of a syncing methods.
+
+We'd be more than happy to discuss a solution to this issue: support@gorgias.io
