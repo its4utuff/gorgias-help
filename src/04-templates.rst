@@ -6,9 +6,8 @@ Creating Templates
 What's a template?
 ------------------
 
-A template is a piece of text that can be inserted with Gorgias, to avoid writing it manually.  
-
-It can be any repetitive text you frequently write. 
+A template is a piece of text that can be inserted in any website input field with Gorgias, to avoid writing it manually.
+It can be any repetitive text you frequently write.
 
 Here are a few examples:
 ::
@@ -66,7 +65,7 @@ You can also create templates out of text in Chrome
 Variables
 ---------
 
-If you address someone in a template, you can use a variable to avoid changing the recipient's name everytime you insert this template. 
+If you address someone in a template, you can use a `variable` to avoid changing the recipient's name everytime you insert this template.
 
 Imagine you start a template by addressing the recipient::
 
@@ -78,7 +77,7 @@ You can use a variable for the recipient first name. Place the selector where yo
 
 Now your template looks like this::
 
-    Hello {{to.0.first_name}},
+    Hello {{to.first_name}},
 
     And then the rest of the e-mail follows...
 
@@ -94,33 +93,35 @@ TADA!
 List of variables
 +++++++++++++++++
 
-Here is the list of variables you can use:
+Here is the complete list of variables you can use:
 
 * `To` field (recipient)
-    * {{to.0.email}}
-    * {{to.0.name}}
-    * {{to.0.last_name}}
-    * {{to.0.first_name}}
+    * {{to.email}}
+    * {{to.name}}
+    * {{to.last_name}}
+    * {{to.first_name}}
 
 * `From` field (you!)
-    * {{from.0.email}}
-    * {{from.0.name}}
-    * {{from.0.last_name}}
-    * {{from.0.first_name}}
+    * {{from.email}}
+    * {{from.name}}
+    * {{from.last_name}}
+    * {{from.first_name}}
 
 * `CC` field
-    * {{cc.0.email}}
-    * {{cc.0.name}}
-    * {{cc.0.last_name}}
-    * {{cc.0.first_name}}
+    * {{cc.email}}
+    * {{cc.name}}
+    * {{cc.last_name}}
+    * {{cc.first_name}}
 
 * `BCC` field
-    * {{bcc.0.email}}
-    * {{bcc.0.name}}
-    * {{bcc.0.last_name}}
-    * {{bcc.0.first_name}}
+    * {{bcc.email}}
+    * {{bcc.name}}
+    * {{bcc.last_name}}
+    * {{bcc.first_name}}
 
 * {{subject}} - subject content of the message
+* {{date '<amount>' '<unit>' '<format>'}} - relative date
+* {{choice 'comma, separated, list'}} - random choice
 
 The power of the templates is given by the `Handlebars <http://handlebarsjs.com/>`_
 template library.
