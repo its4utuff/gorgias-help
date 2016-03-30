@@ -126,6 +126,8 @@ Here is the complete list of variables you can use:
 The power of the templates is given by the `Handlebars <http://handlebarsjs.com/>`_
 template library.
 
+To see the complete list of possible time formats check out momentjs formatting `here <http://momentjs.com/docs/#/parsing/string-format/>`_.
+
 .. note:: If the variable value is missing (e.g. no First Name for the contact) the variable is replace with an empty string.
 
 
