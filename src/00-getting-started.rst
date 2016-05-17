@@ -38,7 +38,7 @@ login or register on the https://gorgias.io/ website. You can simply install
 the extension here and use it on your own.
 
 However, if you like store your templates online and synchronize them between
-devices you can create an account here.
+devices & team members, you can create an account `here <https://gorgias.io/chrome-extension#pricing>`_.
 
 
 Using Gorgias in a team
