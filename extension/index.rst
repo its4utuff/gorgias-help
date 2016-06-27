@@ -25,16 +25,16 @@ Find out more at: https://gorgias.io/
 .. toctree::
    :maxdepth: 2
 
-   src/00-getting-started
-   src/01-autocomplete-dialog
-   src/02-keyboard-completion
-   src/03-sync
-   src/04-templates
-   src/05-tags
-   src/06-search
-   src/07-plugins
-   src/08-alternatives
-   src/09-options
+   00-getting-started
+   01-autocomplete-dialog
+   02-keyboard-completion
+   03-sync
+   04-templates
+   05-tags
+   06-search
+   07-plugins
+   08-alternatives
+   09-options
 
 
 Indices and tables
