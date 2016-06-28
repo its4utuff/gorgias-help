@@ -16,34 +16,39 @@
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% endblock %}
 
-{%- block document %}
-   <div class="documentwrapper
-   {% if 'helpdesk/' in pagename %}
-    gorgias-helpdesk
-  {% endif %}
-
-  {% if 'extension/' in pagename %}
-    gorgias-extension
-  {% endif %}
-  ">
-
-    {%- if render_sidebar %}
-      <div class="bodywrapper">
-    {%- endif %}
-
-        <div class="body" role="main">
-          {% block body %} {% endblock %}
-        </div>
-
-    {%- if render_sidebar %}
+{%- block content %}
+    <div class="header">
+      <div class="header-inner">
+        <a href="/">
+          <img src="/_static/gorgias-logo-white-transparent.png" alt="Gorgias Documentation" width="140">
+        </a>
       </div>
-    {%- endif %}
     </div>
-{% endblock %}
+
+    <div class="document
+      {% if 'helpdesk/' in pagename %}
+        gorgias-helpdesk
+      {% endif %}
+
+      {% if 'extension/' in pagename %}
+        gorgias-extension
+      {% endif %}">
+
+      {%- block document %}
+          <div class="content" role="main">
+            {% block body %} {% endblock %}
+          </div>
+      {%- endblock %}
+
+      {%- block sidebar2 %}{{ sidebar() }}{% endblock %}
+    </div>
+{%- endblock %}
 
 {%- block footer %}
     <div class="footer">
-      {% if show_copyright %}&copy;{{ copyright }}{% endif %}
+      <div class="footer-inner">
+        {% if show_copyright %}&copy;{{ copyright }}{% endif %}
+      </div>
     </div>
 
     {% if theme_analytics_id %}

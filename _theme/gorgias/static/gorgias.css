@@ -1,0 +1,59 @@
+/* Gorgias theme
+ */
+
+@import url("basic.css");
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* header
+ */
+
+.header {
+  padding: 2em;
+  background-color: #006ef0;
+  background-image: radial-gradient(ellipse farthest-corner at bottom center,#006ef0,#004fac);
+}
+
+/* document
+ */
+
+.header-inner,
+.footer-inner,
+.document {
+  max-width: 50em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* content
+ */
+
+.content {
+  float: right;
+  width: 68%;
+}
+
+/* sidebar
+ */
+
+div.sphinxsidebar {
+  margin-left: 0;
+  width: 32%;
+}
+
+/* footer
+ */
+
+.footer {
+  padding: 2em;
+}
