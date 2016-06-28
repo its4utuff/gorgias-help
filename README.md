@@ -7,3 +7,8 @@ Gorgias Documentation
 * `make html`.
 
 HTML files will be in the `_build/html` folder.
+
+## Deploy to GitHub Pages
+
+* `./deploy-ghpages.sh`
+* https://gorgias.github.io/gorgias-help/

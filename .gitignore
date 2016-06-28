@@ -4,3 +4,5 @@ include/
 .Python
 _build
 make.bat
+
+.deploy/
