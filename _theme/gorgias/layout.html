@@ -10,6 +10,8 @@
     <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,600" rel="stylesheet">
 {% endblock %}
 
 {# Disable base theme's top+bottom related navs; we have our own in sidebar #}
@@ -17,23 +19,34 @@
 {%- block relbar2 %}{% endblock %}
 
 {%- block content %}
+  <div class="wrapper
+    {% if 'helpdesk/' in pagename %}
+      gorgias-helpdesk
+    {% endif %}
+
+    {% if 'extension/' in pagename %}
+      gorgias-extension
+    {% endif %}">
+
     <div class="header">
       <div class="header-inner">
-        <a href="/">
+        <a href="/" class="header-logo">
           <img src="/_static/gorgias-logo-white-transparent.png" alt="Gorgias Documentation" width="140">
         </a>
+
+        <h2 class="header-text">
+          {% if 'helpdesk/' in pagename %}
+            Helpdesk
+          {% endif %}
+
+          {% if 'extension/' in pagename %}
+            Chrome Extension
+          {% endif %}
+        </h2>
       </div>
     </div>
 
-    <div class="document
-      {% if 'helpdesk/' in pagename %}
-        gorgias-helpdesk
-      {% endif %}
-
-      {% if 'extension/' in pagename %}
-        gorgias-extension
-      {% endif %}">
-
+    <div class="document">
       {%- block document %}
           <div class="content" role="main">
             {% block body %} {% endblock %}
@@ -42,6 +55,7 @@
 
       {%- block sidebar2 %}{{ sidebar() }}{% endblock %}
     </div>
+  </div>
 {%- endblock %}
 
 {%- block footer %}
