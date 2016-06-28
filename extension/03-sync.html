@@ -1,0 +1,222 @@
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Synchronization &mdash; Gorgias Documentation 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/gorgias.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Gorgias Documentation 0.0.1 documentation" href="../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,600" rel="stylesheet">
+
+  </head>
+  <body role="document">
+  <div class="wrapper
+    
+
+    
+      gorgias-extension
+    ">
+
+    <div class="header">
+      <div class="header-inner">
+        <a href="/" class="header-logo">
+          <img src="/_static/gorgias-logo-white-transparent.png" alt="Gorgias Documentation" width="140">
+        </a>
+
+        <h2 class="header-text">
+          
+
+          
+            Chrome Extension
+          
+        </h2>
+      </div>
+    </div>
+
+    <div class="document">
+          <div class="content" role="main">
+            
+  <div class="section" id="synchronization">
+<span id="sync"></span><h1>Synchronization<a class="headerlink" href="#synchronization" title="Permalink to this headline">¶</a></h1>
+<p>If you have Google Chrome installed on multiple devices you can synchronize
+your templates between machines. Here&#8217;s how you do it:</p>
+<p>Please make sure that you have the <cite>Gorgias</cite> extension <a class="reference external" href="https://chrome.google.com/webstore/detail/quicktext-for-gmail/fbkpbekdjdelappaffjlbfffidknkeko">installed</a> on you
+Google Chrome before following the steps bellow.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Open the &#8216;Options&#8217; for <cite>Gorgias</cite> from Extensions menu in Google Chrome.</li>
+<li><cite>Login</cite> or <cite>Register</cite> if your not yet registered on the <a class="reference external" href="https://gorgias.io/">https://gorgias.io/</a> website.</li>
+<li>Click on <cite>Sync Now</cite> button (it takes a second or 2).</li>
+<li>Optionally refresh the page if you don&#8217;t see them right away.</li>
+</ol>
+</div></blockquote>
+<p>Now all your quicktexts should be synchronized with the Synchronization server.</p>
+<p>In order to get your templates synchronized with other machines repeat
+the steps above (but this time just Login).</p>
+<div class="section" id="how-does-synchronization-work">
+<h2>How does synchronization work?<a class="headerlink" href="#how-does-synchronization-work" title="Permalink to this headline">¶</a></h2>
+<p>Every time the synchronization process starts all your templates are uploaded
+and stored to the <a class="reference external" href="https://gorgias.io/">https://gorgias.io/</a> via a secure HTTPS connection.</p>
+<p>The uploaded templates can now be shared between computers or with other members of your team using the <a class="reference external" href="https://gorgias.io">https://gorgias.io</a>
+interface.</p>
+<p>Syncing not only uploads all your templates it also updates the templates
+that have been modified on other computers or downloads the new templates shared
+by your team.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No templates are ever deleted! Unless you specifically demand it.
+In order to completely delete your data please send an e-mail to <a class="reference external" href="mailto:support&#37;&#52;&#48;gorgias&#46;io">support<span>&#64;</span>gorgias<span>&#46;</span>io</a></p>
+</div>
+</div>
+<div class="section" id="why-not-use-google-sync-instead">
+<h2>Why not use Google Sync instead?<a class="headerlink" href="#why-not-use-google-sync-instead" title="Permalink to this headline">¶</a></h2>
+<p>While <a class="reference external" href="http://www.google.com/sync/index.html">Google Sync</a> is very convenient and works well for most Chrome extensions, it&#8217;s a bit more complicated for <cite>Gorgias</cite>.</p>
+<p>Here are the reasons why Chrome Sync is not the best fit for Gorgias:</p>
+<p>First, <a class="reference external" href="https://developer.chrome.com/extensions/storage">chrome.storage.sync</a> is <a class="reference external" href="https://developer.chrome.com/extensions/storage#property-sync">limited</a> to 100MB and 512 items. While this is more than enough for most Gorgias users, some of our users have more than 512 templates. Hard to believe, but true.</p>
+<p>Secondly (and probably most importantly for our customers) the chrome.storage.sync is attached only to one account, you can&#8217;t share your templates with other team members.</p>
+<p>Other practical reasons include the fact that it&#8217;s difficult to debug a Sync problem when it&#8217;s completely outside your control (Google Servers) and it&#8217;s especially difficult to maintain 2 different implementations of a syncing methods.</p>
+<p>We&#8217;d be more than happy to discuss a solution to this issue: <a class="reference external" href="mailto:support&#37;&#52;&#48;gorgias&#46;io">support<span>&#64;</span>gorgias<span>&#46;</span>io</a></p>
+</div>
+</div>
+
+
+          </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><!-- sidebar-top -->
+<div class="relations">
+  <h2>
+    Documentation
+  </h2>
+
+  <ul>
+    <li>
+      <a href="/">
+        Overview
+      </a>
+    </li>
+  </ul>
+
+  <h3>
+    Chrome Extension
+  </h3>
+
+  <ul>
+    <li>
+      <a href="/extension">
+        Overview
+      </a>
+    </li>
+    <li>
+      <a href="/extension/00-getting-started.html">
+        Getting Started
+      </a>
+    </li>
+    <li>
+      <a href="/extension/01-autocomplete-dialog.html">
+        Autocomplete Dialog
+      </a>
+    </li>
+    <li>
+      <a href="/extension/02-keyboard-completion.html">
+        Keyboard Completion
+      </a>
+    </li>
+    <li>
+      <a href="/extension/03-sync.html">
+        Syncronization
+      </a>
+    </li>
+    <li>
+      <a href="/extension/04-templates.html">
+        Creating Templates
+      </a>
+    </li>
+    <li>
+      <a href="/extension/05-tags.html">
+        Tags
+      </a>
+    </li>
+    <li>
+      <a href="/extension/06-search.html">
+        Search
+      </a>
+    </li>
+    <li>
+      <a href="/extension/07-plugins.html">
+        Plugins
+      </a>
+    </li>
+    <li>
+      <a href="/extension/08-alternatives.html">
+        Alternatives
+      </a>
+    </li>
+    <li>
+      <a href="/extension/09-options.html">
+        Options
+      </a>
+    </li>
+  </ul>
+
+  <h3>
+    Helpdesk
+  </h3>
+
+  <ul>
+    <li>
+      <a href="/helpdesk">
+        Overview
+      </a>
+    <li>
+    <li>
+      <a href="/helpdesk">
+        Full API Docs
+      </a>
+    <li>
+  </ul>
+
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="footer">
+      <div class="footer-inner">
+        &copy;2015, Gorgias Inc.
+      </div>
+    </div>
+
+    
+  </body>
+</html>
