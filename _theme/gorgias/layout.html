@@ -1,5 +1,9 @@
 {%- extends "basic/layout.html" %}
 
+{%- block doctype -%}
+<!doctype html>
+{%- endblock %}
+
 {%- block extrahead %}
   {{ super() }}
   {% if theme_touch_icon %}
@@ -11,6 +15,31 @@
 {# Disable base theme's top+bottom related navs; we have our own in sidebar #}
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% endblock %}
+
+{%- block document %}
+   <div class="documentwrapper
+   {% if 'helpdesk/' in pagename %}
+    gorgias-helpdesk
+  {% endif %}
+
+  {% if 'extension/' in pagename %}
+    gorgias-extension
+  {% endif %}
+  ">
+
+    {%- if render_sidebar %}
+      <div class="bodywrapper">
+    {%- endif %}
+
+        <div class="body" role="main">
+          {% block body %} {% endblock %}
+        </div>
+
+    {%- if render_sidebar %}
+      </div>
+    {%- endif %}
+    </div>
+{% endblock %}
 
 {%- block footer %}
     <div class="footer">

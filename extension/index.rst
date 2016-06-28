@@ -1,5 +1,5 @@
-Gorgias documentation
-=====================
+Gorgias Chrome Extension
+========================
 
 `Gorgias` is a Google Chrome extension that allows Gmail, Yahoo and Outlook users to write
 e-mails faster by using :ref:`autocomplete-dialog`, :ref:`keyboard-completion`,

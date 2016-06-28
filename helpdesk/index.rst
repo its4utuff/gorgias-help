@@ -1,7 +1,7 @@
 .. Gorgias documentation master file
 
-Welcome to Gorgias's documentation!
-===================================
+Gorgias Helpdesk
+================
 
 Contents:
 
