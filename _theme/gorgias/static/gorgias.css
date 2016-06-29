@@ -148,17 +148,22 @@ input[type=submit] {
 /* sidebar
  */
 
+div.sphinxsidebarwrapper {
+  padding: 0;
+}
+
 div.sphinxsidebar {
   float: none;
   width: auto;
-  margin: 2.2em 0 0 0;
+  margin: 3em 0 0 0;
+  padding: 1em;
 }
 
 @media (min-width: 50em) {
   div.sphinxsidebar {
     float: left;
     width: 24%;
-    padding-right: 1em;
+    padding: 0 1em 0 0;
   }
 }
 
@@ -209,15 +214,35 @@ div.sphinxsidebar {
 /* footer
  */
 
-.footer {
-  padding: 2em;
+.footer-inner {
+  border-top: 1px solid #efefef;
+  padding: 1em;
+  margin-top: 3.2em;
+}
+
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+@media (min-width: 50em) {
+  .footer-inner {
+    padding: 1em 0;
+  }
+
+  .footer-links li {
+    display: inline-block;
+    padding-right: 1em;
+  }
 }
 
 
 /* homepage
  */
 
-@media (min-width: 20em) {
+@media (min-width: 50em) {
   .home-links {
     display: table;
     width: 100%;
