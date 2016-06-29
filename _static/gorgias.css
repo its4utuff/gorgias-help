@@ -26,6 +26,23 @@ h4 {
   font-family: 'Source Sans Pro', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2.4em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h2,
+h3,
+h4 {
+  color: #666;
+}
+
 .headerlink {
   margin-left: .2em;
 
@@ -124,24 +141,29 @@ input[type=submit] {
   .content {
     padding: 0;
     float: right;
-    width: 70%;
+    width: 76%;
   }
 }
 
 /* sidebar
  */
 
+div.sphinxsidebarwrapper {
+  padding: 0;
+}
+
 div.sphinxsidebar {
   float: none;
   width: auto;
-  margin: 1.4em 0 0 0;
+  margin: 3em 0 0 0;
+  padding: 1em;
 }
 
 @media (min-width: 50em) {
   div.sphinxsidebar {
     float: left;
-    width: 28%;
-    padding-right: 2%;
+    width: 24%;
+    padding: 0 1em 0 0;
   }
 }
 
@@ -192,6 +214,48 @@ div.sphinxsidebar {
 /* footer
  */
 
-.footer {
-  padding: 2em;
+.footer-inner {
+  border-top: 1px solid #efefef;
+  padding: 1em;
+  margin-top: 3.2em;
+}
+
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+@media (min-width: 50em) {
+  .footer-inner {
+    padding: 1em 0;
+  }
+
+  .footer-links li {
+    display: inline-block;
+    padding-right: 1em;
+  }
+}
+
+
+/* homepage
+ */
+
+@media (min-width: 50em) {
+  .home-links {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .home-link {
+    display: table-cell;
+    width: 2%;
+    padding-right: 1em;
+  }
+
+  .home-link:last-child {
+    padding-right: 0;
+  }
 }
