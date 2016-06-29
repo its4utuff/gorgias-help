@@ -26,6 +26,23 @@ h4 {
   font-family: 'Source Sans Pro', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2.4em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h2,
+h3,
+h4 {
+  color: #666;
+}
+
 .headerlink {
   margin-left: .2em;
 
@@ -124,7 +141,7 @@ input[type=submit] {
   .content {
     padding: 0;
     float: right;
-    width: 70%;
+    width: 76%;
   }
 }
 
@@ -134,14 +151,14 @@ input[type=submit] {
 div.sphinxsidebar {
   float: none;
   width: auto;
-  margin: 1.4em 0 0 0;
+  margin: 2.2em 0 0 0;
 }
 
 @media (min-width: 50em) {
   div.sphinxsidebar {
     float: left;
-    width: 28%;
-    padding-right: 2%;
+    width: 24%;
+    padding-right: 1em;
   }
 }
 
@@ -194,4 +211,26 @@ div.sphinxsidebar {
 
 .footer {
   padding: 2em;
+}
+
+
+/* homepage
+ */
+
+@media (min-width: 20em) {
+  .home-links {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .home-link {
+    display: table-cell;
+    width: 2%;
+    padding-right: 1em;
+  }
+
+  .home-link:last-child {
+    padding-right: 0;
+  }
 }
