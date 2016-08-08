@@ -122,6 +122,7 @@ Here is the complete list of variables you can use:
 * {{subject}} - subject content of the message
 * {{date '<amount>' '<unit>' '<format>'}} - relative date
 * {{choice 'comma, separated, list'}} - random choice
+* {{#splitString to.email delimiter='@' index=1}}{{#splitString this delimiter='.' index=0}}{{this}}{{/splitString}}{{/splitString}} - Domain name of the email recipeint. Ex: if the recipient is support@gorgias.io, this variable will print "gorgias" 
 
 The power of the templates is given by the `Handlebars <http://handlebarsjs.com/>`_
 template library.
