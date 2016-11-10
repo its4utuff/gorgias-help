@@ -96,33 +96,36 @@ List of variables
 Here is the complete list of variables you can use:
 
 * `To` field (recipient)
-    * {{to.email}}
-    * {{to.name}}
-    * {{to.last_name}}
-    * {{to.first_name}}
+    * ``{{to.email}}``
+    * ``{{to.name}}``
+    * ``{{to.last_name}}``
+    * ``{{to.first_name}}``
 
 * `From` field (you!)
-    * {{from.email}}
-    * {{from.name}}
-    * {{from.last_name}}
-    * {{from.first_name}}
+    * ``{{from.email}}``
+    * ``{{from.name}}``
+    * ``{{from.last_name}}``
+    * ``{{from.first_name}}``
 
 * `CC` field
-    * {{cc.email}}
-    * {{cc.name}}
-    * {{cc.last_name}}
-    * {{cc.first_name}}
+    * ``{{cc.email}}``
+    * ``{{cc.name}}``
+    * ``{{cc.last_name}}``
+    * ``{{cc.first_name}}``
 
 * `BCC` field
-    * {{bcc.email}}
-    * {{bcc.name}}
-    * {{bcc.last_name}}
-    * {{bcc.first_name}}
+    * ``{{bcc.email}}``
+    * ``{{bcc.name}}``
+    * ``{{bcc.last_name}}``
+    * ``{{bcc.first_name}}``
 
-* {{subject}} - subject content of the message
-* {{date '<amount>' '<unit>' '<format>'}} - relative date
-* {{choice 'comma, separated, list'}} - random choice
-* {{#splitString to.email delimiter='@' index=1}}{{#splitString this delimiter='.' index=0}}{{this}}{{/splitString}}{{/splitString}} - Domain name of the email recipeint. Ex: if the recipient is support@gorgias.io, this variable will print "gorgias" 
+* ``{{subject}}`` - subject content of the message
+* ``{{date '<amount>' '<unit>' '<format>'}}`` - relative date
+    * A few examples with dates (`list of date formats <http://momentjs.com/docs/#/parsing/string-format/>`_)
+        * Next week: ``{{date '+7' 'days' "DD MMMM"}}`` -> ``13 December``
+        * Last month ``{{date '-1' 'months' "DD MMMM YYYY"}}`` -> ``29 November 2015``
+* ``{{choice 'hello, hi, hey'}}`` - a random choice.
+* ``{{#splitString to.email delimiter='@' index=1}}{{#splitString this delimiter='.' index=0}}{{this}}{{/splitString}}{{/splitString}}`` - Domain name of the email recipeint. Ex: if the recipient is support@gorgias.io, this variable will print "gorgias"
 
 The power of the templates is given by the `Handlebars <http://handlebarsjs.com/>`_
 template library.
