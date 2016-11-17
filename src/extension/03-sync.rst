@@ -14,7 +14,7 @@ Google Chrome before following the steps bellow.
  3. Click on `Sync Now` button (it takes a second or 2).
  4. Optionally refresh the page if you don't see them right away.
 
-Now all your quicktexts should be synchronized with the Synchronization server.
+Now all your templates should be synchronized with the Synchronization server.
 
 In order to get your templates synchronized with other machines repeat
 the steps above (but this time just Login).

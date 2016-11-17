@@ -5,7 +5,7 @@ Autocomplete Dialog
 
 Automatic dialog helps finding the correct template right there where you type.
 
-Imagine that you have a quicktext that explains to your users that they have to check their spam inbox::
+Imagine that you have a template that explains to your users that they have to check their spam inbox::
 
     Title:
         Add note about Spam folder
