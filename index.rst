@@ -1,47 +1,51 @@
 Gorgias documentation
 =====================
 
-`Gorgias` is a Google Chrome extension that allows Gmail, Yahoo and Outlook users to write
-e-mails faster by using :ref:`autocomplete-dialog`, :ref:`keyboard-completion`,
-:ref:`templates` and other features.
+Welcome to the Gorgias docs!
 
-.. raw:: html
+We have two products:
 
-    <object width="480" height="385"><param name="movie"
-    value="http://www.youtube.com/v/mxNsGG-yR9I&hl=en_US&fs=1&rel=0"></param><param
-    name="allowFullScreen" value="true"></param><param
-    name="allowscriptaccess" value="always"></param><embed
-    src="http://www.youtube.com/v/mxNsGG-yR9I&hl=en_US&fs=1&rel=0"
-    type="application/x-shockwave-flash" allowscriptaccess="always"
-    allowfullscreen="true" width="480"
-    height="385"></embed></object>
+- Gorgias Helpdesk: a multi-channel helpdesk integrated with your back-office.
+- Gorgias Templates: a Chrome Extension to insert email templates with shortcuts.
 
-The easiest way to find out how it works is to install_ the extension!
+Browse our documentation to learn more about them!
 
-Find out more at: https://gorgias.io/
 
-.. include README.rst
+Questions?
+==========
+
+We're always happy to help with questions you might have! Search our site for more information or send us an email at support@gorgias.io!
+
+
+Overview
+========
+
+
+* :ref:`helpdesk-docs`
+* :ref:`extension-docs`
+
+.. _helpdesk-docs:
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+    :caption: Helpdesk
 
-   src/00-getting-started
-   src/01-autocomplete-dialog
-   src/02-keyboard-completion
-   src/03-sync
-   src/04-templates
-   src/05-tags
-   src/06-search
-   src/07-plugins
-   src/08-alternatives
-   src/09-options
+    src/helpdesk/00-getting-started
+    src/helpdesk/01-integrations
 
+.. _extension-docs:
 
-Indices and tables
-==================
+.. toctree::
+    :maxdepth: 2
+    :caption: Templates
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-.. _install: https://chrome.google.com/webstore/detail/quicktext-for-gmail/fbkpbekdjdelappaffjlbfffidknkeko
+    src/extension/00-getting-started
+    src/extension/01-autocomplete-dialog
+    src/extension/02-keyboard-completion
+    src/extension/03-sync
+    src/extension/04-templates
+    src/extension/05-tags
+    src/extension/06-search
+    src/extension/07-plugins
+    src/extension/08-alternatives
+    src/extension/09-options

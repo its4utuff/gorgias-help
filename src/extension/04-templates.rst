@@ -1,7 +1,7 @@
 .. _templates:
 
-Creating Templates
-==================
+Templates
+=========
 
 What's a template?
 ------------------
@@ -10,12 +10,13 @@ A template is a piece of text that can be inserted in any website input field wi
 It can be any repetitive text you frequently write.
 
 Here are a few examples:
+
 ::
+
     Malala Yousafzai
     Nobel Peace Prize 2014
     malala@yousafzai.org
     (415)-937-2402 
-
 
 ::
 
@@ -34,32 +35,41 @@ How to create a template?
 First, go to the New Template page
 
     1. Click on the "G" icon to open the Gorgias menu
-.. figure:: img/gorgias-icon.png
-    :width: 200
-    :alt: Gorgias menu
-    :align: center
-.
+
+.. figure:: /_static/img/gorgias-icon.png
+   :width: 200
+   :alt: Gorgias menu
+   :align: center
+
+   caption
+
     2. Click on "New Template". You're in! Now let's create your template
 
     3. Give a name to your template, choose a shortcut (that's the shortcut you will type to insert it), and a body
-.. figure:: img/template-editor.png
-    :width: 500
-    :alt: Template editor
-    :align: center
-.
-    4. Save it and you're done! 
 
-You can now try inserting it in your favorite inbox. 
+.. figure:: /_static/img/template-editor.png
+   :width: 500
+   :alt: Template editor
+   :align: center
+
+   caption
+
+    4. Save it and you're done!
+
+You can now try inserting it in your favorite inbox.
 
 
 You can also create templates out of text in Chrome
     1. Select the text you want to create a template out of, right click on it, and hit "Save [selected text]...".
     2. You can now configure it and save it as explained above!
-.. figure:: img/save.png
-    :width: 500
-    :alt: Template editor
-    :align: center
-.
+
+.. figure:: /_static/img/save.png
+   :width: 500
+   :alt: Template editor
+   :align: center
+
+   caption
+
 
 
 Variables
@@ -121,7 +131,7 @@ Here is the complete list of variables you can use:
 
 * ``{{subject}}`` - subject content of the message
 * ``{{date '<amount>' '<unit>' '<format>'}}`` - relative date
-    * A few examples with dates (`list of date formats <http://momentjs.com/docs/#/parsing/string-format/>`_)
+    * A few examples with dates (`list of date formats <string-format_>`_)
         * Next week: ``{{date '+7' 'days' "DD MMMM"}}`` -> ``13 December``
         * Last month ``{{date '-1' 'months' "DD MMMM YYYY"}}`` -> ``29 November 2015``
 * ``{{choice 'hello, hi, hey'}}`` - a random choice.
@@ -130,9 +140,9 @@ Here is the complete list of variables you can use:
 The power of the templates is given by the `Handlebars <http://handlebarsjs.com/>`_
 template library.
 
-To see the complete list of possible time formats check out momentjs formatting `here <http://momentjs.com/docs/#/parsing/string-format/>`_.
+To see the complete list of possible time formats check out momentjs formatting `here <string-format_>`_.
 
-.. note:: If the variable value is missing (e.g. no First Name for the contact) the variable is replace with an empty string.
+.. note:: If the variable value is missing (e.g. no First Name for the contact) the variable will be replaced with an empty string.
 
 
 Formatting
@@ -158,4 +168,7 @@ In the "New template" window, click on "Configure Fields" to show the subject fi
 Tagging
 -------
 
-You can tag templates to keep your templates organized. You can find more in :ref:`tags`. 
+You can tag templates to keep your templates organized. You can find more in :ref:`tags`.
+
+
+.. _string-format: http://momentjs.com/docs/#/parsing/string-format/
