@@ -20,10 +20,6 @@ We're always happy to help with questions you might have! Search our site for mo
 Overview
 ========
 
-
-* :ref:`helpdesk-docs`
-* :ref:`extension-docs`
-
 .. _helpdesk-docs:
 
 .. toctree::
