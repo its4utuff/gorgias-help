@@ -69,3 +69,7 @@ If you're using a Google Apps account for your support inbox, follow the steps b
 
 
 Nice job! You can now head over to Gorgias and start responding to your customers' emails!
+
+.. note:: If you want to forward emails to several addresses at the same time, you can `create a filter`_ in your Google Apps account.
+
+.. _create a filter: http://gappstips.com/gmail/automatically-forward-emails-to-multiple-recipients-in-gmail
