@@ -89,15 +89,22 @@ Then, you can also do actions in Shopify from Gorgias itself.
 
 Here's how to do so:
 
-    1. Go to your Shopify account
+1. Go to your Shopify account
 
-    2. Open the "App" page
+2. Open the "App" page
 
-    3. Select "Private apps"
+3. Select "Private apps"
 
-    4. Create a new private app, called "Gorgias"
+4. Create a new private app, called "Gorgias"
 
-    5. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
+5. Change the "Customer" and "Order" permission to "Read and write"
+
+.. figure:: /_static/img/helpdesk/integrations/shopify-permissions.png
+    :width: 500
+    :alt: Shopify permissions
+    :align: center
+
+6. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
 
 Your custom back-office app
 +++++++++++++++++++++++++++

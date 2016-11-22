@@ -26,7 +26,7 @@ How to set up email forwarding
 Email forwarding for Google Apps
 ++++++++++++++++++++++++++++++++
 
-If you're using a Google Apps account to manage your support inbox, follow the steps below to forward your emails to Gorgias.
+If you're using a Google Apps account for your support inbox, follow the steps below to forward your emails to Gorgias.
 
 1. Click on the gear icon in the upper right-hand corner of Gmail, then click the Settings option from the drop-down menu.
 
