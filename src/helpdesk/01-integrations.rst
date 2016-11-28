@@ -104,7 +104,7 @@ Here's how to do so:
     :alt: Shopify permissions
     :align: center
 
-6. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
+6. Send the API key and password to support@gorgias.io, and we'll finish the setup for you!
 
 Your custom back-office app
 +++++++++++++++++++++++++++
