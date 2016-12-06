@@ -172,7 +172,7 @@ To do so:
 
     2. Use the GET method and your back-office url. It should look like this: company.com/api/users?email={ticket.requester.email}
 
-    3. Optional: use a headers to pass the API key. For instance: "Authorization", "Basic 5Nmy9Z1loPr0M45TVBVRqoKyccj1jI03aGAZEx2fkO4KILVAq9PCpqA2Dk4Zcee9KkhTbHB5TrC5yydx="
+    3. Optional: use a headers to pass the API key. For instance: "Authorization", "Basic 5Nmy9Z1loPr0M45TVBVRqoKyccj1jI03aGAZEx2fkO4"
 
     4. Select a trigger
 
