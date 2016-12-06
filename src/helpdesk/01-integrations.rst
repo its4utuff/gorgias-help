@@ -97,14 +97,67 @@ Here's how to do so:
 
 4. Create a new private app, called "Gorgias"
 
-5. Change the "Customer" and "Order" permission to "Read and write"
+5. Change the Customer and Order permission to "Read and write"
+
+6. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
 
 .. figure:: /_static/img/helpdesk/integrations/shopify-permissions.png
     :width: 500
     :alt: Shopify permissions
     :align: center
 
-6. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
+WooCommerce
++++++++++++
+
+When you receive a message, you can display the customer profile and the last orders from WooCommerce in Gorgias.
+Then, you can also do actions in WooCommerce from Gorgias itself, such as editing an order.
+
+Here's how to do so:
+
+1. Go to your WooCommerce admin, in the general tab, and click "enable the REST API". Note: this may be under a different tab based on your version of WooCommerce
+
+2. Go to the "API" tab, and make sure the permissions for the API are "Read/Write"
+
+3. Send the Consumer key and the Consumer secret to support@gorgias.io, and we'll finish the setup for you!
+
+.. figure:: /_static/img/helpdesk/integrations/woocommerce-keys.png
+    :width: 500
+    :alt: Woocommerce keys
+    :align: center
+
+Salesforce
+++++++++++
+
+When you receive a message, you can display customer information from the associated contact in Salesforce.
+
+Let's connect Salesforce to Gorgias:
+
+1. Go to Setup in Salesforce (at the top right of your screen)
+
+2. Type "Apps" in Quickfind
+
+3. Under Build>Create, open Apps
+
+4. In the "Connected Apps" section of the page, click "New"
+
+5. Enter "Gorgias" as the Connected App Name and App Name, and "support@gorgias.io" as the Contact email
+
+6. Select Enable OAuth Settings
+
+7. Enter https://gorgias.io as the Callback URL.
+
+8. Select "Access and manage your data (api)" and click "Add" to add it to the list of Selected OAuth Scopes
+
+9. Click "Save", then "Continue"
+
+10. Click on "Click to reveal" on the Consumer Secret
+
+11. Send the Consumer key and the Consumer secret to support@gorgias.io, and we'll finish the setup for you!
+
+.. figure:: /_static/img/helpdesk/integrations/salesforce-keys.png
+    :width: 500
+    :alt: Salesforce keys
+    :align: center
 
 Your custom back-office app
 +++++++++++++++++++++++++++
