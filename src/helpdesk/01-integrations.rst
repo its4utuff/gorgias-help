@@ -99,7 +99,7 @@ Here's how to do so:
 
 5. Change the Customer and Order permission to **Read and write**
 
-6. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
+6. Send the **API key** and the **API secret** to support@gorgias.io, and we'll finish the setup for you!
 
 .. figure:: /_static/img/helpdesk/integrations/shopify-permissions.png
     :width: 500
@@ -118,7 +118,7 @@ Here's how to do so:
 
 2. Go to the **API** tab, and make sure the permissions for the API are **Read/Write**
 
-3. Send the Consumer key and the Consumer secret to support@gorgias.io, and we'll finish the setup for you!
+3. Send the **Consumer key** and the **Consumer secret** to support@gorgias.io, and we'll finish the setup for you!
 
 .. figure:: /_static/img/helpdesk/integrations/woocommerce-keys.png
     :width: 500
@@ -152,18 +152,12 @@ Let's connect Salesforce to Gorgias:
 
 10. Click on **Click to reveal** on the Consumer Secret
 
-11. Send the Consumer key and the Consumer secret to support@gorgias.io, and we'll finish the setup for you!
+11. Send the **Consumer key** and the **Consumer secret** to support@gorgias.io, and we'll finish the setup for you!
 
 .. figure:: /_static/img/helpdesk/integrations/salesforce-keys.png
     :width: 500
     :alt: Salesforce keys
     :align: center
-
-SugarCRM
-++++++++
-
-When you receive a message, you can display customer information from the associated contact in SugarCRM.
-
 
 Your custom back-office app
 +++++++++++++++++++++++++++
@@ -237,10 +231,21 @@ To do so:
 
 1. Create a zap in zapier and choose a **webhook** as a trigger.
 
-2. Create an http integration in Gorgias
+2. Create an **Http integration** in Gorgias
 
-3. Select the POST method and use the webhook url from Zapier. You can pass arguments from Gorgias to Zapier using headers.
+3. Select the **POST** method and use the webhook url from Zapier. You can pass arguments from Gorgias to Zapier using headers.
 
-4. Select a trigger of your choice
+4. Select a **Trigger** of your choice
 
 Now, when the integration is triggered, your zap will run.
+
+Shipstation
++++++++++++
+
+You can display order information from Shipstation, like the order number, the tracking status or the shipping method.
+
+Here's how to connect Shipstation:
+
+1. Head over to the `Settings <https://ss.shipstation.com/#/settings/api>`_ section of your account
+
+2. Send the **API key** and the **API secret** to support@gorgias.io, and we'll finish the setup for you!
