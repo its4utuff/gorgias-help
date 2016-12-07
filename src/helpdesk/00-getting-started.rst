@@ -73,3 +73,15 @@ Nice job! You can now head over to Gorgias and start responding to your customer
 .. note:: If you want to forward emails to several addresses at the same time, you can `create a filter`_ in your Google Apps account.
 
 .. _create a filter: http://gappstips.com/gmail/automatically-forward-emails-to-multiple-recipients-in-gmail
+
+Email forwarding for Outlook
+++++++++++++++++++++++++++++
+
+1. Log in to Outlook.com using your support email address
+2. Click on the **Gear icon** at the top right
+3. Click **Option** in the dropdown
+4. Under **Mail > Accounts**, click **Forwarding**
+5. Click **Start Forwarding**, and type support@{your-account-name}.gorgias.io.
+6. Click **Save**.
+
+Nice job! You can now head over to Gorgias and start responding to your customers' emails!

@@ -21,7 +21,7 @@ Facebook
 Facebook is a popular social network where customers can interact with companies. This integration creates tickets when customers post on your Facebook page or send you a message on Messenger.
 
 To get started with Facebook:
-    1. Click "Add Facebook Page"
+    1. Click **Add Facebook Page**
 
     2. Authorize the Gorgias app on Facebook
 
@@ -29,7 +29,7 @@ To get started with Facebook:
 
     4. Choose your import settings
 
-    5. Click "Add Page"
+    5. Click **Add Page**
 
 Once you've added a Facebook page, every time someone posts on the page, comments on a post, or contacts the page via Messenger, it will create a ticket in Gorgias.
 When you respond to this ticket, your response will be visible to the customer on Facebook, and also to your team on the Facebook messaging app.
@@ -44,11 +44,11 @@ Smooch is a chat widget that you can add on your website to interact with custom
 In order to enable chat in Gorgias, you need to create an account on Smooch first.
 
 Then, here's how to connect your Smooch account to Gorgias:
-    1. Click the "Add Smooch" button in integrations
+    1. Click the **Add Smooch** button in integrations
 
-    2. Go to your Smooch account settings, create a new secret key and paste your "key ID" and "secret" in Gorgias
+    2. Go to your Smooch account settings, create a new secret key and paste your **key ID** and **secret** in Gorgias
 
-    3. Click "Add Integration"
+    3. Click **Add Integration**
 
 .. figure:: /_static/img/adding_smooch.png
     :width: 500
@@ -91,13 +91,13 @@ Here's how to do so:
 
 1. Go to your Shopify account
 
-2. Open the "App" page
+2. Open the **App** page
 
-3. Select "Private apps"
+3. Select **Private apps**
 
-4. Create a new private app, called "Gorgias"
+4. Create a new private app, called **Gorgias**
 
-5. Change the Customer and Order permission to "Read and write"
+5. Change the Customer and Order permission to **Read and write**
 
 6. Send the API key and the API secret to support@gorgias.io, and we'll finish the setup for you!
 
@@ -114,9 +114,9 @@ Then, you can also do actions in WooCommerce from Gorgias itself, such as editin
 
 Here's how to do so:
 
-1. Go to your WooCommerce admin, in the general tab, and click "enable the REST API". Note: this may be under a different tab based on your version of WooCommerce
+1. Go to your WooCommerce admin, in the general tab, and click **enable the REST API**. Note: this may be under a different tab based on your version of WooCommerce
 
-2. Go to the "API" tab, and make sure the permissions for the API are "Read/Write"
+2. Go to the **API** tab, and make sure the permissions for the API are **Read/Write**
 
 3. Send the Consumer key and the Consumer secret to support@gorgias.io, and we'll finish the setup for you!
 
@@ -134,23 +134,23 @@ Let's connect Salesforce to Gorgias:
 
 1. Go to Setup in Salesforce (at the top right of your screen)
 
-2. Type "Apps" in Quickfind
+2. Type **Apps** in Quickfind
 
 3. Under Build>Create, open Apps
 
-4. In the "Connected Apps" section of the page, click "New"
+4. In the **Connected Apps** section of the page, click **New**
 
-5. Enter "Gorgias" as the Connected App Name and App Name, and "support@gorgias.io" as the Contact email
+5. Enter **Gorgias** as the Connected App Name and App Name, and **support@gorgias.io** as the Contact email
 
 6. Select Enable OAuth Settings
 
 7. Enter https://gorgias.io as the Callback URL.
 
-8. Select "Access and manage your data (api)" and click "Add" to add it to the list of Selected OAuth Scopes
+8. Select **Access and manage your data (api)** and click **Add** to add it to the list of Selected OAuth Scopes
 
-9. Click "Save", then "Continue"
+9. Click **Save**, then **Continue**
 
-10. Click on "Click to reveal" on the Consumer Secret
+10. Click on **Click to reveal** on the Consumer Secret
 
 11. Send the Consumer key and the Consumer secret to support@gorgias.io, and we'll finish the setup for you!
 
@@ -158,6 +158,12 @@ Let's connect Salesforce to Gorgias:
     :width: 500
     :alt: Salesforce keys
     :align: center
+
+SugarCRM
+++++++++
+
+When you receive a message, you can display customer information from the associated contact in SugarCRM.
+
 
 Your custom back-office app
 +++++++++++++++++++++++++++
@@ -168,11 +174,11 @@ With Gorgias, you can automatically fetch customer data when a ticket is created
 
 To do so:
 
-    1. Add an http integration
+    1. Add an **Http integration**
 
-    2. Use the GET method and your back-office url. It should look like this: company.com/api/users?email={ticket.requester.email}
+    2. Use the **GET** method and your back-office url. It should look like this: company.com/api/users?email={ticket.requester.email}
 
-    3. Optional: use a headers to pass the API key. For instance: "Authorization", "Basic 5Nmy9Z1loPr0M45TVBVRqoKyccj1jI03aGAZEx2fkO4"
+    3. Optional: use a headers to pass the API key. For instance: **Authorization**, **Basic 5Nmy9Z1loPr0M45TVBVRqoKyccj1jI03aGAZEx2fkO4**
 
     4. Select a trigger
 
@@ -194,25 +200,25 @@ When a new ticket is created, you can connect Slack to post a notification in th
 
 Here's how to do it:
 
-    1. Go to "Apps & integrations" on Slack
+    1. Go to **Apps & integrations** on Slack
 
-    2. Click "Build" (top right) to add a custom integration
+    2. Click **Build** (top right) to add a custom integration
 
-    3. Select "Incoming WebHooks"
+    3. Select **Incoming WebHooks**
 
-    4. Select the channel where you want to see notifications of new tickets, and click "Add Incoming WebHooks Configuration"
+    4. Select the channel where you want to see notifications of new tickets, and click **Add Incoming WebHooks Configuration**
 
-    5. Copy the "Webhook URL"
+    5. Copy the **Webhook URL**
 
     6. Create an HTTP integration in Gorgias
 
-    7. Use the "Webhook URL" from Slack as a url
+    7. Use the **Webhook URL** from Slack as a url
 
     8. Paste the code below to the body (to pass the ticket information to Slack)
 
-    9. Select "Ticket Created" as a trigger
+    9. Select **Ticket Created** as a trigger
 
-    10. Click "Add Integration"
+    10. Click **Add Integration**
 
 
 .. figure:: /_static/img/slack_integration.png
@@ -229,7 +235,7 @@ You can trigger a zap when a ticket is created and/or updated.
 
 To do so:
 
-1. Create a zap in zapier and choose a "webhook" as a trigger.
+1. Create a zap in zapier and choose a **webhook** as a trigger.
 
 2. Create an http integration in Gorgias
 
