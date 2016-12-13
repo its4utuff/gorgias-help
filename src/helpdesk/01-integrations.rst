@@ -220,6 +220,20 @@ Here's how to do it:
     :alt: Slack notification in Gorgias
     :align: center
 
+
+Here's the JSON that you can paste::
+
+    {
+        "text": "New ticket <https://{ticket.account.domain}.gorgias.io/app/ticket/{ticket.id}|*{ticket.subject}*> from *{ticket.requester.name}*",
+        "attachments": [
+            {
+                "text": "{ticket.first_message.body_text}",
+                "title": "{ticket.subject}",
+                "title_link": "https://{ticket.account.domain}.gorgias.io/app/ticket/{ticket.id}"
+            }
+        ]
+    }
+
 TADA!
 
 Zapier
