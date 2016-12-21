@@ -178,9 +178,14 @@ To do so:
 
     5. Save
 
-Then, when a ticket is created or updated, Gorgias will automatically pull customer information from your back-office, and display it in the sidebar on the left of your tickets.
+Then, when a ticket is created or updated, Gorgias will automatically pull customer information from your back-office, and display it in the sidebar on the right of your tickets.
 
-You can then use the interface builder to personalize the sidebar to your needs.
+To edit the sidebar, click on the settings **wheel icon**. Then, you can drag and drop items and personalize labels in the **Manage widgets** page.
+
+.. figure:: /_static/img/helpdesk/integrations/widgets.gif
+    :width: 500
+    :alt: Manage widgets
+    :align: center
 
 Slack
 +++++
