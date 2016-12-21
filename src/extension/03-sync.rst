@@ -7,17 +7,11 @@ If you have Google Chrome installed on multiple devices you can synchronize
 your templates between machines. Here's how you do it:
 
 Please make sure that you have the `Gorgias` extension installed_ on you
-Google Chrome before following the steps bellow.
+Google Chrome.
 
- 1. Open the 'Options' for `Gorgias` from Extensions menu in Google Chrome.
- 2. `Login` or `Register` if your not yet registered on the https://gorgias.io/ website.
- 3. Click on `Sync Now` button (it takes a second or 2).
- 4. Optionally refresh the page if you don't see them right away.
+Now log in and all your templates will be synchronized.
 
-Now all your templates should be synchronized with the Synchronization server.
-
-In order to get your templates synchronized with other machines repeat
-the steps above (but this time just Login).
+In order to get your templates synchronized with other computers, make sure you are logged in on the other computers too.
 
 How does synchronization work?
 ------------------------------
