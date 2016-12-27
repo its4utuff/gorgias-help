@@ -25,4 +25,4 @@ You can find the above template by typing `spam` for example. It will match it b
 Disabling Autocomplete Dialog
 -----------------------------
 
-Autocomplete Dialog is great, but if you want to disable them yo can do so by accessing the extension's :ref:`options`.
+Autocomplete Dialog is great, but if you want to disable them yo can do so by accessing the extension's :ref:`settings`.

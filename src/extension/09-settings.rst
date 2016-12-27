@@ -1,7 +1,7 @@
 .. _settings:
 
 Settings
-=======
+========
 
 To customize the extension and get to it's options follow the following instructions:
 
@@ -10,7 +10,7 @@ To customize the extension and get to it's options follow the following instruct
 3. More tools
 4. Extensions
 5. Find `Gorgias` in the list (make sure it's enabled).
-6. Click on `Options` link.
+6. Click on `Settings` link.
 
 Subscription & Credit card
 --------------------------
