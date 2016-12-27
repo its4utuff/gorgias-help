@@ -12,4 +12,4 @@ following video:
 Disabling Keyboard Completion
 -----------------------------
 
-Keyboard Suggestions are great, but if you want to disable them yo can do so by accessing the extension's :ref:`options`.
+Keyboard Suggestions are great, but if you want to disable them yo can do so by accessing the extension's :ref:`settings`.

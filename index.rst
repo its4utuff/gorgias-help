@@ -44,4 +44,4 @@ Overview
     src/extension/06-search
     src/extension/07-plugins
     src/extension/08-alternatives
-    src/extension/09-options
+    src/extension/09-settings
