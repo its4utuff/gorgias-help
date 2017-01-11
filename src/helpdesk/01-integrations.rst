@@ -165,6 +165,7 @@ Your custom back-office app
 Most support teams use a custom back-office, or admin, to look up customer profiles and do actions on them.
 
 With Gorgias, you can automatically fetch customer data when a ticket is created, and display it next to tickets.
+In order to connect your back-office to Gorgias, you'll need an endpoint on which Gorgias can fetch customer data given the email address of the customer. If you need any help with this, please contact support@gorgias.io and we'll help you do it. 
 
 To do so:
 
