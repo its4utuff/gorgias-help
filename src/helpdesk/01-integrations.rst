@@ -162,17 +162,28 @@ Let's connect Salesforce to Gorgias:
 Your custom back-office app
 +++++++++++++++++++++++++++
 
-Most support teams use a custom back-office, or admin, to look up customer profiles and do actions on them.
+Most support teams use a custom back-office, or admin, to look up customer profiles and do actions on them. With Gorgias, you can automatically fetch customer data when a ticket is created, and display it next to tickets.
 
-With Gorgias, you can automatically fetch customer data when a ticket is created, and display it next to tickets.
+In order to connect your back-office, you'll need an endpoint on which Gorgias can fetch customer data given the address of a customer. 
 
-In order to connect your back-office, you'll need an endpoint on which Gorgias can fetch customer data given the email address of a customer. If you need any help with this, please contact support@gorgias.io. 
+For example, you can have an endpoint like this one: GET https://company.com/api/users?email={email}
+Which returns customer data::
+    {  
+       "order":{  
+          "id":4759226956,
+          "name":"#1002",
+          "note":"",
+          "tags":"",
+          "token":"56710ab7e3ebc4d1e16078290a1536ac"
+    }
 
-Once you have such an endpoint, follow these steps to connect your back-office:
+If you need any help with this, please contact support@gorgias.io. 
+
+Once you have such an endpoint, follow these steps to fectch data on each ticket:
 
     1. Add an **Http integration**
 
-    2. Use the **GET** method and your back-office url. It should look like this: company.com/api/users?email={ticket.requester.email}
+    2. Use the **GET** method and your back-office url. It should look like this: https://company.com/api/users?email={ticket.requester.email}
 
     3. Optional: use a headers to pass the API key. For instance: **Authorization**, **Basic 5Nmy9Z1loPr0M45TVBVRqoKyccj1jI03aGAZEx2fkO4**
 
