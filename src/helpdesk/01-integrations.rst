@@ -166,8 +166,9 @@ Most support teams use a custom back-office, or admin, to look up customer profi
 
 In order to connect your back-office, you'll need an endpoint on which Gorgias can fetch customer data given the address of a customer. 
 
-For example, you can have an endpoint like this one: GET https://company.com/api/users?email={email}
-Which returns customer data::
+For example, you can have an endpoint like this one:: 
+    GET https://company.com/api/users?email={email}
+It can return customer data like this::
     {  
        "order":{  
           "id":4759226956,
@@ -176,9 +177,7 @@ Which returns customer data::
           "tags":"",
           "token":"56710ab7e3ebc4d1e16078290a1536ac"
     }
-
-If you need any help with this, please contact support@gorgias.io. 
-
+    
 Once you have such an endpoint, follow these steps to fectch data on each ticket:
 
     1. Add an **Http integration**
