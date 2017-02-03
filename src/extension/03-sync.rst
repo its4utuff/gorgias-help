@@ -29,7 +29,7 @@ by your team.
 .. note:: No templates are ever deleted! Unless you specifically demand it.
           In order to completely delete your data please send an e-mail to support@gorgias.io
 
-.. _installed: https://chrome.google.com/webstore/detail/quicktext-for-gmail/fbkpbekdjdelappaffjlbfffidknkeko
+.. _installed: https://chrome.google.com/webstore/detail/gorgias-templates-email-t/lmcngpkjkplipamgflhioabnhnopeabf
 
 Why not use Google Sync instead?
 --------------------------------
