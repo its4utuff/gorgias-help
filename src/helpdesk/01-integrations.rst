@@ -36,6 +36,29 @@ When you respond to this ticket, your response will be visible to the customer o
 
 .. note:: If the agent who added the page to Gorgias no longer has admin permissions on the page, you'll need someone else to re-authorize the page on your Gorgias account.
 
+Chat
+----
+
+You can add a chat widget on your website. Every time a user starts a conversation, it opens a ticket in Gorgias. You can then respond to the ticket to chat with the user.
+You can add multiple chat integrations.
+
+To get started with Facebook:
+    1. Click **Chat** in the integration page
+
+    2. Click **Add chat** 
+
+    3. Name your chat. Usually the name of your company
+
+    4. Add the code snippet to your site
+
+Once you've added chat, when a visitor or a an app user start a conversation with you, it will create a chat ticket in Gorgias.
+You'll see a notification in recent activities and the ticket will auto-refresh when the customers responds.
+
+.. figure:: /_static/img/chat.png
+    :width: 500
+    :alt: Chat ticket
+    :align: center
+
 Smooch
 ------
 
@@ -44,24 +67,33 @@ Smooch is a chat widget that you can add on your website to interact with custom
 In order to enable chat in Gorgias, you need to create an account on Smooch first.
 
 Then, here's how to connect your Smooch account to Gorgias:
-    1. Click the **Add Smooch** button in integrations
+    1. Click **Smooch** in the integration page
+    
+    1. Click the **Add my Smooch** button
 
-    2. Go to your Smooch account settings, create a new secret key and paste your **key ID** and **secret** in Gorgias
+    3. Login with your Smooch account
+    
 
-    3. Click **Add Integration**
+Shopify
+-------
 
-.. figure:: /_static/img/adding_smooch.png
+When you receive a message, you can display the customer profile and the last orders from Shopify in Gorgias.
+Then, you can also do actions in Shopify from Gorgias itself, like refunding an order. 
+
+Then, here's how to connect your Smooch account to Gorgias:
+    1. Click **Shopify** in the integration page
+    
+    1. Click the **Add Shopify** button
+
+    3. Login with your Shopify account
+    
+Now, when a customer contacts you, you'll see their profile and orders in the sidebar. 
+
+.. figure:: /_static/img/ticket.png
     :width: 500
-    :alt: Adding Smooch integration
+    :alt: Shopify integration
     :align: center
 
-Once you've added Smooch, when a visitor or a an app user start a conversation with you, it will create a chat ticket in Gorgias.
-You'll see a notification in recent activities and the ticket will auto-refresh when the customers responds.
-
-.. figure:: /_static/img/chat.png
-    :width: 500
-    :alt: Chat ticket
-    :align: center
 
 HTTP Integrations
 -----------------
@@ -75,36 +107,6 @@ There are two main use-cases for HTTP integrations:
 You can use Gorgias variables to pass data to other apps, like the customer's email with the {ticket.requester.email} variable
 
 Below are popular use cases for HTTP integrations.
-
-Shopify
-+++++++
-
-When you receive a message, you can display the customer profile and the last orders from Shopify in Gorgias.
-Then, you can also do actions in Shopify from Gorgias itself.
-
-.. figure:: /_static/img/ticket.png
-    :width: 500
-    :alt: Shopify integration
-    :align: center
-
-Here's how to do so:
-
-1. Go to your Shopify account
-
-2. Open the **App** page
-
-3. Select **Private apps**
-
-4. Create a new private app, called **Gorgias**
-
-5. Change the Customer and Order permission to **Read and write**
-
-6. Send the **API key** and the **API secret** to support@gorgias.io, and we'll finish the setup for you!
-
-.. figure:: /_static/img/helpdesk/integrations/shopify-permissions.png
-    :width: 500
-    :alt: Shopify permissions
-    :align: center
 
 WooCommerce
 +++++++++++
@@ -152,7 +154,7 @@ Let's connect Salesforce to Gorgias:
 
 10. Click on **Click to reveal** on the Consumer Secret
 
-11. Send the **Consumer key** and the **Consumer secret** to support@gorgias.io, and we'll finish the setup for you!
+11. Send the **Consumer key**, the **Consumer secret** to support@gorgias.io, create an account for support@gorgias.io, and we'll finish the setup for you!
 
 .. figure:: /_static/img/helpdesk/integrations/salesforce-keys.png
     :width: 500
