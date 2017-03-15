@@ -59,6 +59,38 @@ You'll see a notification in recent activities and the ticket will auto-refresh 
     :alt: Chat ticket
     :align: center
 
+Chat for Shopify
+++++++++++++++++
+
+If you're using Shopify, you can automatically see the Shopify profile of the customer next to the chat conversation when the customer is logged in on your website.
+
+To do so, use the code below instead of the one provided in your chat integration. Make sure to replace '{{ SMOOCH_APP_TOKEN }}' with your appToken from the chat code snippet in Gorgias. This token looks like this: 'lnIpG3UCYDq7z8A4O6c9sBI0a9zOpA'.
+
+.. code-block:: html
+
+    <script src="https://cdn.smooch.io/smooch.min.js"></script>
+    {% if customer %}
+    <script>
+            Smooch.init({
+                appToken: '{{ SMOOCH_APP_TOKEN }}',
+                givenName: '{{ customer.name }}',
+                email: '{{ customer.email }}',
+                properties: {
+                    'current_page': window.location.href
+                }
+            });
+     </script>
+    {% else %}
+    <script>
+            Smooch.init({
+                appToken: '{{ SMOOCH_APP_TOKEN }}',
+            });
+     </script>
+    {% endif %}
+
+You can also `customize the wordings on the chat widget <https://github.com/smooch/smooch-js#initoptions>`_.
+
+
 Smooch
 ------
 
