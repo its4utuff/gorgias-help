@@ -64,7 +64,21 @@ Chat for Shopify
 
 If you're using Shopify, you can automatically see the Shopify profile of the customer next to the chat conversation when the customer is logged in on your website.
 
-To do so, use the code below instead of the one provided in your chat integration. Make sure to replace '{{ SMOOCH_APP_TOKEN }}' with your appToken from the chat code snippet in Gorgias. This token looks like this: 'lnIpG3UCYDq7z8A4O6c9sBI0a9zOpA'.
+Follow these steps to add a chat widget on your store:
+    1. Go to your Shopify account, and open **Online Store**
+
+    2. Click on the "..." icon a the top right
+
+    3. Select **Edit HTML/CSS** in the dropdown
+
+    4. Open the theme.liquid file
+
+    5. Paste the code before **<body>** tag. Make sure to replace '{{ SMOOCH_APP_TOKEN }}' with your appToken from the chat code snippet in Gorgias. This token looks like this: 'lnIpG3UCYDq7z8A4O6c9sBI0a9zOpA'.
+
+.. figure:: /_static/img/helpdesk/integrations/shopify_add_chat_theme.png
+    :width: 500
+    :alt: Add chat to Shopify theme.liquid
+    :align: center
 
 .. code-block:: html
 
@@ -87,6 +101,12 @@ To do so, use the code below instead of the one provided in your chat integratio
             });
      </script>
     {% endif %}
+
+.. figure:: /_static/img/helpdesk/integrations/shopify_add_chat_code.png
+    :width: 500
+    :alt: Add chat to Shopify theme.liquid
+    :align: center
+
 
 You can also `customize the wordings on the chat widget <https://github.com/smooch/smooch-js#initoptions>`_.
 
