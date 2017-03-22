@@ -74,14 +74,52 @@ Nice job! You can now head over to Gorgias and start responding to your customer
 
 .. _create a filter: http://gappstips.com/gmail/automatically-forward-emails-to-multiple-recipients-in-gmail
 
+
 Email forwarding for Outlook
 ++++++++++++++++++++++++++++
 
 1. Log in to Outlook.com using your support email address
 2. Click on the **Gear icon** at the top right
 3. Click **Option** in the dropdown
+
+.. figure:: /_static/img/helpdesk/getting-started/outlook-options.png
+    :width: 500
+    :alt: Outlook gear
+    :align: center
+
 4. Under **Mail > Accounts**, click **Forwarding**
 5. Click **Start Forwarding**, and type support@{your-account-name}.gorgias.io.
+
+.. figure:: /_static/img/helpdesk/getting-started/outlook-forwarding.png
+    :width: 500
+    :alt: Outlook forwarding
+    :align: center
+
+6. Click **Save**.
+
+Nice job! You can now head over to Gorgias and start responding to your customers' emails!
+
+
+Email forwarding for Office365
+++++++++++++++++++++++++++++++
+
+1. Log in to your Outlook Office365 using your support email address
+2. Click on the **Gear icon** at the top right
+3. Search for **Forwarding** in the search area
+
+.. figure:: /_static/img/helpdesk/getting-started/office365-options.png
+    :width: 500
+    :alt: office365 gear
+    :align: center
+
+4. Click the **Forwarding** link
+5. Click **Start Forwarding**, and type support@{your-account-name}.gorgias.io.
+
+.. figure:: /_static/img/helpdesk/getting-started/office365-forwarding.png
+    :width: 500
+    :alt: office365 forwarding
+    :align: center
+
 6. Click **Save**.
 
 Nice job! You can now head over to Gorgias and start responding to your customers' emails!
