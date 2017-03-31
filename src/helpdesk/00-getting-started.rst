@@ -74,6 +74,32 @@ Nice job! You can now head over to Gorgias and start responding to your customer
 
 .. _create a filter: http://gappstips.com/gmail/automatically-forward-emails-to-multiple-recipients-in-gmail
 
+Email forwarding for G Suite Groups
++++++++++++++++++++++++++++++++++++
+
+1. Log in to your `G Suite Admin console <https://admin.google.com>`_ and select **Groups**
+
+.. figure:: /_static/img/helpdesk/getting-started/gsuite_group_apps.png
+    :width: 500
+    :alt: Outlook gear
+    :align: center
+
+2. Open the group address that you want to add. Typically, it's support@your-company.com
+3. Click **Add users to group** at the top right
+
+.. figure:: /_static/img/helpdesk/getting-started/gsuite_group_add_member.png
+    :width: 500
+    :alt: Outlook gear
+    :align: center
+
+4. Type type support@{your-account-name}.gorgias.io. and click **Add**
+
+.. figure:: /_static/img/helpdesk/getting-started/gsuite_group_modal.png
+    :width: 500
+    :alt: Outlook gear
+    :align: center
+
+Nice job! Head over to Gorgias. The next time someone emails this address, it will create a ticket in Gorgias.
 
 Email forwarding for Outlook.com
 ++++++++++++++++++++++++++++++++
