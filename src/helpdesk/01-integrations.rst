@@ -346,6 +346,7 @@ Elev.io
 `Elev.io <https://elev.io/>`_ is an in-app help center. Your customers can browse help articles on any page of your website, and contact support.
 
 You can connect Elev.io to Gorgias. This way:
+
 - Customers can start a chat conversation from Elev.io
 - Customers can send you an email that will receive in Gorgias
 
