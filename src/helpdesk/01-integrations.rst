@@ -338,3 +338,33 @@ Here's how to connect Shipstation:
 1. Head over to the `Settings <https://ss.shipstation.com/#/settings/api>`_ section of your account
 
 2. Send the **API key** and the **API secret** to support@gorgias.io, and we'll finish the setup for you!
+
+
+Elev.io
+-------
+
+`Elev.io <https://elev.io/>`_ is an in-app help center. Your customers can browse help articles on any page of your website, and contact support.
+
+You can connect Elev.io to Gorgias. This way:
+- Customers can start a chat conversation from Elev.io
+- Customers can send you an email that will receive in Gorgias
+
+.. figure:: /_static/img/helpdesk/integrations/elevio.png
+    :width: 500
+    :alt: Slack notification in Gorgias
+    :align: center
+
+
+Here's how to connect Elev.io & Gorgias:
+
+    1. In the `elev.io dashboard <https://app.elev.io/>`_, go to **Modules**
+
+    2. Under the Trigger module, click **Install**
+
+    3. Write "Chat with us" as the Display Title, select "Open Smooch chat window" as an action, pick an icon and click **Add Module**
+
+    4. Go back to Modules, under the Link module, click **Install**
+
+    5. Write "Email us" as the Display Title, and "mailto:yoursupportemail@company.com" as the url, pick the mail icon and click **Add Module**
+
+Done! Now, you customers can email you or start a chat conversation from the Elev.io help center.
