@@ -347,8 +347,8 @@ Elev.io
 
 You can connect Elev.io to Gorgias. This way:
 
-- Customers can start a chat conversation from Elev.io
-- Customers can send you an email that will receive in Gorgias
+- Customers can start chat conversations from Elev.io.
+- Customers can email you. You'll receive their emails in Gorgias.
 
 .. figure:: /_static/img/helpdesk/integrations/elevio.png
     :width: 500
@@ -368,4 +368,4 @@ Here's how to connect Elev.io & Gorgias:
 
     5. Write "Email us" as the Display Title, and "mailto:yoursupportemail@company.com" as the url, pick the mail icon and click **Add Module**
 
-Done! Now, you customers can email you or start a chat conversation from the Elev.io help center.
+Done! Now, your customers can email you or start a chat conversation from the Elev.io help center.
